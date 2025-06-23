@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-
+import "./App.css";
 function AdviceGenerator() {
   const [advice, setAdvice] = useState("Click the button to get advice!");
   const [loading, setLoading] = useState(false);
@@ -29,7 +29,7 @@ function AdviceGenerator() {
 
   return (
     <div className="advice-container">
-      <h1>Advice Generator</h1>
+      <div className="body-wrapper">   <h1>Advice Generator</h1>
       <div className="advice-box">
         {error ? (
           <p className="error">{error}</p>
@@ -43,7 +43,7 @@ function AdviceGenerator() {
         className="advice-button"
       >
         {loading ? 'Loading...' : 'Get New Advice'}
-      </button>
+      </button></div>
     </div>
   );
 }

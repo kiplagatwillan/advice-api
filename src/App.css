@@ -5,13 +5,13 @@
 }
 
 .advice-container {
-  max-width: 600px;
+ 
+ width: 80%;
+ height: 80vh;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: #a7892a;
 }
 
 .advice-box {
